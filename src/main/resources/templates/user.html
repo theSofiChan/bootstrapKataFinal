@@ -50,7 +50,6 @@
                             <th>Age</th>
                             <th>Country</th>
                             <th>Email</th>
-                            <th>Password</th>
                             <th>Roles</th>
                         </tr>
                         <tr id="tableRemaining">
@@ -58,7 +57,6 @@
                             <td th:utext=${user.getAge()}>val</td>
                             <td th:utext=${user.getCountry()}>val</td>
                             <td th:utext=${user.getEmail()}>val</td>
-                            <td th:utext=${user.getPassword()}>val</td>
                             <td>
                                     <span th:each="role : ${user.roles}"
                                           th:value="${role.id}"

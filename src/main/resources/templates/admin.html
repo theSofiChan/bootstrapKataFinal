@@ -191,7 +191,7 @@
                                                 <div class="myForm2">
                                                     <div class="modal fade" id="myModal"
                                                          role="dialog" tabindex="-1" th:id="${'delete'+user.id}">
-                                                        <form action="#" method="delete" th:action="@{admin/delete}">
+                                                        <form action="#" th:method="DELETE" th:action="@{admin/delete}">
 
                                                             <div class="modal-dialog" role="document">
                                                                 <div class="modal-content">
@@ -323,13 +323,21 @@
                                           th:value="${role.id}"
                                           th:text="${role.name + ' '}">role</span>
                                 </td>
+
+
                             </tr>
+
                         </table>
+
+
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
